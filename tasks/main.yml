@@ -18,3 +18,4 @@
     owner: root
     group: bareos
     mode: '0640'
+    validate: /usr/sbin/bconsole --test-config --config %s

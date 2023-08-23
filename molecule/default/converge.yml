@@ -11,8 +11,3 @@
           address: localhost
           password: "MySuperSecretPassword"
           description: "Bareos Console credentials for local Director"
-
-      bareos_bconsole_users:
-        - name: my-user
-          password: "MySuperSecretPassword"
-          director: bareos-dir

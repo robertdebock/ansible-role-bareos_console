@@ -2,9 +2,24 @@
 - name: Verify
   hosts: all
   become: yes
-  gather_facts: yes
+  gather_facts: no
 
   tasks:
     - name: Run bconsole --version
       ansible.builtin.command:
-        cmd: "bconsole --version"
+        cmd: bconsole --version
+      changed_when: no
+
+    - name: List directors
+      ansible.builtin.command:
+        cmd: bconsole --list-directors
+      changed_when: no
+
+    - name: Use bconsole to check if the Bareos Director is running
+      ansible.builtin.shell:
+        cmd: |
+          bconsole << EOF
+          status director
+          quit
+          EOF
+      changed_when: no

@@ -2,3 +2,8 @@
 roles:
   - name: robertdebock.bootstrap
   - name: robertdebock.bareos_repository
+  # The next requiremets are included to test the connection to the director.
+  - name: robertdebock.buildtools
+  - name: robertdebock.python_pip
+  - name: robertdebock.postgres
+  - name: robertdebock.bareos_dir
