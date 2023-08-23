@@ -19,13 +19,12 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
   roles:
     - role: robertdebock.bareos_console
-      bareos_bconsole_directors:
+      bareos_console_directors:
         - name: bareos-dir
           address: localhost
           password: "MySuperSecretPassword"
           description: "Bareos Console credentials for local Director"
           tls_enable: no
-
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/robertdebock/ansible-role-bareos_console/blob/master/molecule/default/prepare.yml):
@@ -53,7 +52,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 # defaults file for bareos_console
 
 # A list of directors to connect to.
-# bareos_bconsole_directors:
+# bareos_console_directors:
 #   - name: bareos-dir
 #     address: localhost
 #     password: "MySuperSecretPassword"
@@ -61,7 +60,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 #     tls_enable: no
 
 # A list of users to allow access.
-# bareos_bconsole_users:
+# bareos_console_users:
 #   - name: my-user
 #     password: "MySuperSecretPassword"
 #     director: bareos-dir

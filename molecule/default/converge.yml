@@ -6,7 +6,7 @@
 
   roles:
     - role: ansible-role-bareos_console
-      bareos_bconsole_directors:
+      bareos_console_directors:
         - name: bareos-dir
           address: localhost
           password: "MySuperSecretPassword"
