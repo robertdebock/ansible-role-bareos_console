@@ -23,6 +23,8 @@
       - item.description is defined
       - item.description is string
       - item.description is not none
+      - item.tls_enable is defined
+      - item.tls_enable is boolean
     quiet: yes
   loop: "{{ bareos_console_directors }}"
   loop_control:

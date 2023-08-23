@@ -7,6 +7,7 @@
 #     address: localhost
 #     password: "MySuperSecretPassword"
 #     description: "Bareos Console credentials for local Director"
+#     tls_enable: no
 
 # A list of users to allow access.
 # bareos_bconsole_users:
