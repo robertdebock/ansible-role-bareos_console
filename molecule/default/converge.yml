@@ -12,4 +12,3 @@
           password: "MySuperSecretPassword"
           description: "Bareos Console credentials for local Director"
           tls_enable: no
-
