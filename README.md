@@ -37,19 +37,6 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 
   roles:
     - role: robertdebock.bootstrap
-    # The next requiremets are included to test the connection to the Director.
-    - name: robertdebock.buildtools
-    - name: robertdebock.python_pip
-    - name: robertdebock.postgres
-    - role: robertdebock.bareos_repository
-    - name: robertdebock.bareos_dir
-      bareos_dir_password: "MySuperSecretPassword"
-      bareos_dir_max_concurrent_jobs: 10
-      bareos_dir_message: Daemon
-      bareos_dir_messages:
-        - name: "Standard"
-          director: "dir-1 = all, !skipped, !restored"
-          description: "Send all messages to the Director."
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
@@ -88,10 +75,6 @@ The following roles are used to prepare a system. You can prepare your system in
 |-------------|--------|--------|
 |[robertdebock.bootstrap](https://galaxy.ansible.com/robertdebock/bootstrap)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/robertdebock-iac/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-bootstrap)|
 |[robertdebock.bareos_repository](https://galaxy.ansible.com/robertdebock/bareos_repository)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-bareos_repository/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bareos_repository/actions)|[![Build Status GitLab](https://gitlab.com/robertdebock-iac/ansible-role-bareos_repository/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-bareos_repository)|
-|[robertdebock.buildtools](https://galaxy.ansible.com/robertdebock/buildtools)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-buildtools/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-buildtools/actions)|[![Build Status GitLab](https://gitlab.com/robertdebock-iac/ansible-role-buildtools/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-buildtools)|
-|[robertdebock.python_pip](https://galaxy.ansible.com/robertdebock/python_pip)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-python_pip/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-python_pip/actions)|[![Build Status GitLab](https://gitlab.com/robertdebock-iac/ansible-role-python_pip/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-python_pip)|
-|[robertdebock.postgres](https://galaxy.ansible.com/robertdebock/postgres)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-postgres/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-postgres/actions)|[![Build Status GitLab](https://gitlab.com/robertdebock-iac/ansible-role-postgres/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-postgres)|
-|[robertdebock.bareos_dir](https://galaxy.ansible.com/robertdebock/bareos_dir)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-bareos_dir/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bareos_dir/actions)|[![Build Status GitLab](https://gitlab.com/robertdebock-iac/ansible-role-bareos_dir/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-bareos_dir)|
 
 ## [Context](#context)
 

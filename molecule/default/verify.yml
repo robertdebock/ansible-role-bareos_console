@@ -14,12 +14,3 @@
       ansible.builtin.command:
         cmd: bconsole --list-directors
       changed_when: no
-
-    - name: Use bconsole to check if the Bareos Director is running
-      ansible.builtin.shell:
-        cmd: |
-          bconsole << EOF
-          status director
-          quit
-          EOF
-      changed_when: no
