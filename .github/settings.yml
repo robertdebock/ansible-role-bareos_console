@@ -5,4 +5,4 @@
 repository:
   description: Install and configure BareOS Console (bconsole) on your system.
   homepage: https://robertdebock.nl/
-  topics: bareosconsole, application, cloud, database, development, infrastructure, linux, monitoring, networking, storage, security, system, tools, windows, ansible, molecule, tox, playbook
+  topics: backup, bareos, infrastructure, linux, storage, system, tools, ansible, molecule, tox, playbook
