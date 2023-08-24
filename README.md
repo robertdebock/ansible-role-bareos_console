@@ -58,12 +58,6 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 #     password: "MySuperSecretPassword"
 #     description: "Bareos Console credentials for local Director"
 #     tls_enable: no
-
-# A list of users to allow access.
-# bareos_console_users:
-#   - name: my-user
-#     password: "MySuperSecretPassword"
-#     director: bareos-dir
 ```
 
 ## [Requirements](#requirements)

@@ -11,13 +11,3 @@ Director {
 }
 {% endfor %}
 {% endif %}
-
-{% if bareos_console_users is defined %}
-{% for user in bareos_console_users %}
-Console {
-   Name = {{ user.name }}
-   Password = "{{ user.password }}"
-   Director = {{ user.director }}
-}
-{% endfor %}
-{% endif %}

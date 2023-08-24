@@ -12,6 +12,3 @@ argument_specs:
       bareos_console_directors:
         type: "list"
         description: "A list of directors to connect to."
-      bareos_console_users:
-        type: "list"
-        description: "A list of users to allow access."
