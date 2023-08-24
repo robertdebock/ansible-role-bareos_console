@@ -1,6 +1,6 @@
 # [bareos_console](#bareos_console)
 
-Install and configure BareOS Console (bconsole) on your system.
+Install and configure [BareOS](https://www.bareos.com/) Console (bconsole) on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
@@ -24,7 +24,8 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
           address: localhost
           password: "MySuperSecretPassword"
           description: "Bareos Console credentials for local Director"
-          tls_enable: no
+          tls_enable: yes
+          tls_verify_peer: no
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/robertdebock/ansible-role-bareos_console/blob/master/molecule/default/prepare.yml):
@@ -58,6 +59,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 #     password: "MySuperSecretPassword"
 #     description: "Bareos Console credentials for local Director"
 #     tls_enable: no
+#     tls_verify_peer: no
 ```
 
 ## [Requirements](#requirements)
