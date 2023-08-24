@@ -7,7 +7,12 @@ Director {
    Address = {{ director.address }}
    Password = "{{ director.password }}"
    Description = "{{ director.description }}"
+{% if director.tls_enable is defined %}
    TLS Enable = {{ director.tls_enable | ternary('true', 'false') }}
+{% endif %}
+{% if director.tls_verify_peer is defined %}
+   TLS Verify Peer = {{ director.tls_verify_peer | ternary('true', 'false') }}
+{% endif %}
 }
 {% endfor %}
 {% endif %}

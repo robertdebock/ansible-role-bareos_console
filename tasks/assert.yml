@@ -23,11 +23,31 @@
       - item.description is defined
       - item.description is string
       - item.description is not none
-      - item.tls_enable is defined
-      - item.tls_enable is boolean
     quiet: yes
   loop: "{{ bareos_console_directors }}"
   loop_control:
     label: "{{ item.name }}"
   when:
     - bareos_console_directors is defined
+
+- name: assert | Test if item tls_enable in bareos_console_directors is set correctly
+  ansible.builtin.assert:
+    that:
+      - item.tls_enable is boolean
+    quiet: yes
+  loop: "{{ bareos_console_directors }}"
+  loop_control:
+    label: "{{ item.name }}"
+  when:
+    - item.tls_enable is defined
+
+- name: assert | Test if item tls_verify_peer in bareos_console_directors is set correctly
+  ansible.builtin.assert:
+    that:
+      - item.tls_verify_peer is boolean
+    quiet: yes
+  loop: "{{ bareos_console_directors }}"
+  loop_control:
+    label: "{{ item.name }}"
+  when:
+    - item.tls_verify_peer is defined
