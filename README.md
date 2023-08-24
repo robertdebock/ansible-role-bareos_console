@@ -58,7 +58,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 #     address: localhost
 #     password: "MySuperSecretPassword"
 #     description: "Bareos Console credentials for local Director"
-#     tls_enable: no
+#     tls_enable: yes
 #     tls_verify_peer: no
 ```
 

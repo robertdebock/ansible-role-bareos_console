@@ -7,5 +7,5 @@
 #     address: localhost
 #     password: "MySuperSecretPassword"
 #     description: "Bareos Console credentials for local Director"
-#     tls_enable: no
+#     tls_enable: yes
 #     tls_verify_peer: no
