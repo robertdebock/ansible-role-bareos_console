@@ -44,23 +44,6 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
-## [Role Variables](#role-variables)
-
-The default values for the variables are set in [`defaults/main.yml`](https://github.com/robertdebock/ansible-role-bareos_console/blob/master/defaults/main.yml):
-
-```yaml
----
-# defaults file for bareos_console
-
-# A list of directors to connect to.
-# bareos_console_directors:
-#   - name: bareos-dir
-#     address: localhost
-#     password: "MySuperSecretPassword"
-#     description: "Bareos Console credentials for local Director"
-#     tls_enable: yes
-#     tls_verify_peer: no
-```
 
 ## [Requirements](#requirements)
 
