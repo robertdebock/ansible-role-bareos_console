@@ -13,3 +13,5 @@
           description: "Bareos Console credentials for local Director"
           tls_enable: yes
           tls_verify_peer: no
+        - name: disabled-dir
+          enabled: no

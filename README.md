@@ -26,6 +26,8 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
           description: "Bareos Console credentials for local Director"
           tls_enable: yes
           tls_verify_peer: no
+        - name: disabled-dir
+          enabled: no
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/robertdebock/ansible-role-bareos_console/blob/master/molecule/default/prepare.yml):
@@ -44,6 +46,16 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
+## [Role Variables](#role-variables)
+
+The default values for the variables are set in [`defaults/main.yml`](https://github.com/robertdebock/ansible-role-bareos_console/blob/master/defaults/main.yml):
+
+```yaml
+---
+# defaults file for bareos_console
+
+bareos_console_directors: []
+```
 
 ## [Requirements](#requirements)
 
