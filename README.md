@@ -26,8 +26,6 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
           description: "Bareos Console credentials for local Director"
           tls_enable: yes
           tls_verify_peer: no
-        - name: disabled-dir
-          enabled: no
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/robertdebock/ansible-role-bareos_console/blob/master/molecule/default/prepare.yml):

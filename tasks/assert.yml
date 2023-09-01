@@ -8,7 +8,7 @@
   when:
     - bareos_console_directors is defined
 
-- name: assert | Test if items in bareos_console_directors are set correctly when enabled
+- name: assert | Test if items in bareos_console_directors are set correctly
   ansible.builtin.assert:
     that:
       - item.name is defined
@@ -29,24 +29,6 @@
     label: "{{ item.name }}"
   when:
     - bareos_console_directors is defined
-    - item.enabled is not defined or
-      (item.enabled is defined and item.enabled)
-
-- name: assert | Test if items in bareos_console_directors are set correctly when not enabled
-  ansible.builtin.assert:
-    that:
-      - item.name is defined
-      - item.name is string
-      - item.name is not none
-      - item.enabled is defined
-      - item.enabled is boolean
-    quiet: yes
-  loop: "{{ bareos_console_directors }}"
-  loop_control:
-    label: "{{ item.name }}"
-  when:
-    - bareos_console_directors is defined
-    - item.enabled is defined and not item.enabled
 
 - name: assert | Test if item tls_enable in bareos_console_directors is set correctly
   ansible.builtin.assert:
