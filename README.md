@@ -1,4 +1,4 @@
-# Ansible role [bareos_console](#bareos_console)
+# [Ansible role bareos_console](#bareos_console)
 
 Install and configure [Bareos](https://www.bareos.com/) Console (bconsole) on your system.
 
