@@ -4,7 +4,7 @@ Install and configure [Bareos](https://www.bareos.com/) Console (bconsole) on yo
 
 |GitHub|GitLab|Downloads|Version|
 |------|------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-bareos_console/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bareos_console/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-bareos_console/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-bareos_console)|[![downloads](https://img.shields.io/ansible/role/d/32434)](https://galaxy.ansible.com/robertdebock/bareos_console)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-bareos_console.svg)](https://github.com/robertdebock/ansible-role-bareos_console/releases/)|
+|[![github](https://github.com/robertdebock/ansible-role-bareos_console/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bareos_console/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-bareos_console/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-bareos_console)|[![downloads](https://img.shields.io/ansible/role/d/robertdebock/bareos_console)](https://galaxy.ansible.com/robertdebock/bareos_console)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-bareos_console.svg)](https://github.com/robertdebock/ansible-role-bareos_console/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
