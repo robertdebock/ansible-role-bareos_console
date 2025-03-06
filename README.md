@@ -18,7 +18,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   gather_facts: true
 
   roles:
-    - role: ansible-role-bareos_console
+    - role: robertdebock.bareos_console
       bareos_console_directors:
         - name: bareos-dir
           address: localhost
